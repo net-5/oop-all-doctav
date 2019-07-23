@@ -7,5 +7,6 @@ namespace AppOOP.Interfaces
     interface IFly
     {
         void Fly(int speed);
+        int FlySpeed { get; set; }
     }
 }

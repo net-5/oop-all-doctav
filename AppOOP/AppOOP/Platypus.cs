@@ -11,14 +11,31 @@ namespace AppOOP
         {
         }
 
+        public int WalkSpeed { get; set; }
+        public int SwimSpeed { get; set; }
+
         public void Swim(int speed)
         {
-            Console.WriteLine($"I am a platypus. My name is {Name} and I swim with {speed} km/h.");
+            if (speed < SwimSpeed)
+            {
+                Console.WriteLine($"I am a platypus. My name is {Name} and I swim with {speed} km/h.");
+            }
+            else
+            {
+                Console.WriteLine($"I am a platypus. My name is {Name} and my maximum swim speed is {SwimSpeed} km/h.");
+            }
         }
 
         public void Walk(int speed)
         {
-            Console.WriteLine($"I am a platypus. My name is {Name} and I walk with {speed} km/h");
+            if (speed < WalkSpeed)
+            {
+                Console.WriteLine($"I am a platypus. My name is {Name} and I walk with {speed} km/h");
+            }
+            else
+            {
+                Console.WriteLine($"I am a platypus. My name is {Name} and may maximum walk speed is {WalkSpeed} km/h");
+            }
         }
     }
 }

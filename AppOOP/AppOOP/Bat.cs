@@ -11,9 +11,18 @@ namespace AppOOP
         {
         }
 
+        public int FlySpeed { get; set; }
+
         public void Fly(int speed)
         {
-            Console.WriteLine($"I am a bat. My name is {Name} and I fly with {speed} km/h.");
+            if (speed < FlySpeed)
+            {
+                Console.WriteLine($"I am a bat. My name is {Name} and I fly with {speed} km/h.");
+            }
+            else
+            {
+                Console.WriteLine($"I am a bat. My name is {Name} and my maximum speed is {FlySpeed} km/h.");
+            }
         }
     }
 }

@@ -7,5 +7,6 @@ namespace AppOOP.Interfaces
     interface ICrawl
     {
         void Crawl(int speed);
+        int CrawlSpeed { get; set; }
     }
 }

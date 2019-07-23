@@ -7,5 +7,6 @@ namespace AppOOP.Interfaces
     interface IWalk
     {
         void Walk(int speed);
+        int WalkSpeed { get; set; }
     }
 }

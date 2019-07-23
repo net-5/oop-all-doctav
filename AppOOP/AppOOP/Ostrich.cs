@@ -11,9 +11,18 @@ namespace AppOOP
         {
         }
 
+        public int WalkSpeed { get; set; }
+
         public void Walk(int speed)
         {
-            Console.WriteLine($"I am a bird. My name is {Name} and I don't fly, but I walk with {speed} km/h.");
+            if (speed < WalkSpeed)
+            {
+                Console.WriteLine($"I am a bird. My name is {Name} and I don't fly, but I walk with {speed} km/h.");
+            }
+            else
+            {
+                Console.WriteLine($"I am a bird. My name is {Name} and I don't fly, but my maximum walk speed is {WalkSpeed} km/h.");
+            }
         }
     }
 }

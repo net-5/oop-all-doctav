@@ -19,18 +19,24 @@ namespace AppOOP
             Console.WriteLine("Hello World! Here we have some amazing animals!");
 
             Bat myBat = new Bat("BatMan");
+            myBat.FlySpeed = 150;
             myBat.Fly(100);
 
             WildDuck myDuck = new WildDuck("Duffy Duck");
+            myDuck.FlySpeed = 50;
+            myDuck.SwimSpeed = 70;
+            myDuck.WalkSpeed = 20;
             myDuck.Fly(30);
             myDuck.Swim(80);
             myDuck.Walk(10);
 
             Platypus myPlatypus = new Platypus("Small platypus");
+            myPlatypus.SwimSpeed = 50; myPlatypus.WalkSpeed = 50;
             myPlatypus.Swim(40);
             myPlatypus.Walk(5);
 
             Ostrich myOstrich = new Ostrich("Long Neck");
+            myOstrich.WalkSpeed = 300;
             myOstrich.Walk(200);
         }
     }
